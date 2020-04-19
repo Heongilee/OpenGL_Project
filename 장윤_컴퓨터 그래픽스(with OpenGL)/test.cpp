@@ -1,22 +1,60 @@
-// Default Set Up
+#include <gl/glut.h>
+
+///////////////////////////////////////////////////////////////////////////////
+//							[ 프로젝트 속성 -> 링커 -> 입력 -> 추가 종속성 ]
+//
+//		opengl32.lib
+//		glu32.lib
+//		freeglut.lib
+//
+///////////////////////////////////////////////////////////////////////////////
 
 void init() {
-	glClearColor(1.0, 1.0, 1.0, 0.0);	// 디스플레이 화면을 전부 흰색으로 셋업.
-	glMatrixMode(GL_PROJECTION);		// 카메라 셋팅 ::
-	gluOrtho2D(0.0, 200.0, 0.0, 150.0);	// ???
+	// void glClearColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha);
+	glClearColor(0.0, 0.0, 0.0, 1.0);	// 검정 색상의 불투명 색상으로 state 초기화.
 
+	glColor3f(1.0, 1.0, 1.0);			// white
+
+	glMatrixMode(GL_PROJECTION);		// GL_PROJECTION은 카메라를 뜻함.
+	glLoadIdentity();					// Identity 행렬을 불러들임.
+
+	//void gluOrtho2D (GLdouble left, GLdouble right, GLdouble bottom, GLdouble top);
+	gluOrtho2D(-1.0, 1.0, -1.0, 1.0);
 	return;
 }
 
-void lineSegment() {
-	gClear(GL_COLOR_BUFFER_BIT);		// 화면 정리 :: 프레임 버퍼 정리
-	glColor3f(0.0, 0.0, 1.0);			// 파랑색(R = 0, G = 0, B = 1.0)으로 라인을 그림
-	glBegin(GL_LINES);					// 두 점을 이용해 라인을 그릴 것임.
-	//{
-		glVertex2i(180, 15);			// 첫 번째 점.
-		glVertex2i(10, 145);			// 두 번째 점.
-	//}
+void mydisplay() {
+	glClear(GL_COLOR_BUFFER_BIT);
+	glBegin(GL_POLYGON);
+		glVertex2f(-0.5, -0.5);
+		glVertex2f(-0.5, 0.5);
+		glVertex2f(0.5, 0.5);
+		glVertex2f(0.5, -0.5);
 	glEnd();
 
-	glFLush();							// 버퍼에 있는 것들을 화면에 뿌려주세요!
+	glFlush();
+	return;
+}
+
+int main(int argc, char** argv) {
+	// glut init
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+
+	// actual window size
+	glutInitWindowSize(500, 500);
+	glutInitWindowPosition(0, 0);
+
+	// create window with title "simple"
+	glutCreateWindow("15012970 / 이헌기");
+
+	// call mydisplay() function
+	// FGAPI void    FGAPIENTRY glutDisplayFunc( void (* callback)( void ) );
+	glutDisplayFunc(mydisplay);
+
+	// call init() function
+	init();
+
+	glutMainLoop();
+	return 0;
 }
