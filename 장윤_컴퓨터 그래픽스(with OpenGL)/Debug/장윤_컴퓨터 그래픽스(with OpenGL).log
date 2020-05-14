@@ -1,2 +1,6 @@
 ﻿  test.cpp
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\장윤_컴퓨터 그래픽스(with opengl)\test.cpp(14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\장윤_컴퓨터 그래픽스(with opengl)\test.cpp(15): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\장윤_컴퓨터 그래픽스(with opengl)\test.cpp(18): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\장윤_컴퓨터 그래픽스(with opengl)\test.cpp(19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
   장윤_컴퓨터 그래픽스(with OpenGL).vcxproj -> C:\Users\gjsrl\Documents\Git_space\장윤_컴퓨터 그래픽스(with OpenGL)\Debug\장윤_컴퓨터 그래픽스(with OpenGL).exe

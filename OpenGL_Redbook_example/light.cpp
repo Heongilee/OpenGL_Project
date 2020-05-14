@@ -1,6 +1,7 @@
 //#include "Myheaders.h"
 //
 //void init() {
+//	//ambient, diffuse는 default로 셋팅 된 것을 사용함.
 //	GLfloat mat_specular[] = {1.0, 1.0, 1.0, 1.0};
 //	GLfloat mat_shiness[] = { 50.0 };
 //	GLfloat light_position[] = { 1.0, 1.0, 1.0, 0.0 };
@@ -44,11 +45,14 @@
 //}
 //
 //void keyboard(unsigned char key, int x, int y) {
+//	printf("%d\n", key);
+//
 //	switch (key) {
 //	case 27:
 //		exit(0);
 //		break;
 //	}
-//
+//	
+//	glutSwapBuffers();
 //	return;
 //}

@@ -62,17 +62,17 @@
 //	return 0;
 //}
 
-////double.c
-//int main(int argc, char** argv) {
-//	glutInit(&argc, argv);
-//	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-//	glutInitWindowSize(250, 250);
-//	glutInitWindowPosition(100, 100);
-//	glutCreateWindow(argv[0]);
-//	init();
-//	glutDisplayFunc(display);
-//	glutReshapeFunc(reshape);
-//	glutMouseFunc(mouse);
-//	glutMainLoop();
-//	return 0;
-//}
+//double.c
+int main(int argc, char** argv) {
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+	glutInitWindowSize(1280, 720);
+	glutInitWindowPosition(100, 25);
+	glutCreateWindow(argv[0]);
+	init();
+	glutDisplayFunc(display);
+	glutReshapeFunc(reshape);
+	glutMouseFunc(mouse);
+	glutMainLoop();
+	return 0;
+}

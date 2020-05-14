@@ -1,12 +1,120 @@
-﻿  main.cpp
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(48): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(49): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(50): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(51): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(58): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(79): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(81): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(88): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(89): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
-c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\main.cpp(112): warning C4305: '인수': 'double'에서 'GLclampf'(으)로 잘립니다.
+﻿  roomPlane.cpp
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(13): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(13): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(14): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(14): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(15): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(15): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(18): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(18): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(19): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(19): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(20): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(20): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(23): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(23): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(24): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(25): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(28): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(29): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(29): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(30): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(33): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(33): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(34): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(34): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(35): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(38): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(39): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(39): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(40): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(43): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(44): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(44): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(45): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(45): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(48): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(49): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(49): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(50): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(53): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(54): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(54): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(55): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(55): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(58): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(59): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(59): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(60): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(63): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(64): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(65): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(68): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(69): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(70): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(75): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(92): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(92): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(93): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(93): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(94): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(94): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(97): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(97): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(98): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(98): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(99): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(99): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(102): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(102): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(103): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(103): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(104): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(107): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(108): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(108): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(109): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(112): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(112): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(113): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(113): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(114): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(117): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(118): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(118): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(119): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(122): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(123): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(123): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(124): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(124): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(127): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(128): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(128): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(129): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(132): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(133): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(133): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(134): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(134): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(137): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(138): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(138): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(139): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(142): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(143): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(144): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(147): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(148): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(149): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(153): warning C4091: '': 변수를 선언하지 않으면 'void' 왼쪽은 무시됩니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(178): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(180): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(183): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(191): warning C4244: '인수': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(195): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(232): warning C4244: '=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(240): warning C4305: '인수': 'double'에서 'GLclampf'(으)로 잘립니다.
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\hw4\roomplane.cpp(299): warning C4244: '=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   HW4.vcxproj -> C:\Users\gjsrl\Documents\Git_space\장윤_컴퓨터 그래픽스(with OpenGL)\Debug\HW4.exe

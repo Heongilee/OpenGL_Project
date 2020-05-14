@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\gjsrl\documents\git_space\장윤_컴퓨터 그래픽스(with opengl)\note_l11\main.cpp(112): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+  NOTE_L11.vcxproj -> C:\Users\gjsrl\Documents\Git_space\장윤_컴퓨터 그래픽스(with OpenGL)\Debug\NOTE_L11.exe
