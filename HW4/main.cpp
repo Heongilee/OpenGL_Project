@@ -6,7 +6,7 @@
 	2. 더블 버퍼 사용할 것.
 	3. 마우스 인터렉션
 		ㄴ 왼쪽 마우스 : 회전						(OK)
-		ㄴ 가운데 마우스 : 이동(Translate)
+		ㄴ 가운데 마우스 : 이동(Translate)			(OK)
 		ㄴ 오른쪽 마우스 : 줌인-아웃.				(OK)
 		
 		※ 참고 : Trackball
@@ -28,6 +28,7 @@ int main(int argc, char** argv) {
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
 	glutMouseFunc(mouse);
+	glutKeyboardFunc(keyboard);
 	glutMainLoop();
 	return 0;
 }

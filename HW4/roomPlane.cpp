@@ -148,15 +148,21 @@ void drawWall_1(GLfloat x, GLfloat y, GLfloat z, GLfloat px, GLfloat py, GLfloat
 	glVertex3f(1 * (x / 2.0), -1 * (y / 2.0), -1 * (z + 0.1));
 	glVertex3f(1 * (x / 2.0), 1 * (y / 2.0), -1 * (z + 0.1));
 	glEnd();
-	// <<<<<<<<<<<<<<<<<<<<<<
 	glPopMatrix();
 	void;
 }
 void display(void) {
+	GLfloat mat_ambient[] = { 0.3, 0.5, 0.1, 1.0 };
+	GLfloat mat_diffuse[] = { 0.25, 0.25, 0.25, 1.0 };
+	GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
+
 	reshape(my_Window_width, my_Window_height);	// 줌 인/아웃을 위해 한번 더 호출함.
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glPushMatrix();
-	//glRotatef(30.0, 0.0, 1.0, 1.0);
+	glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient);
+	glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse);
+	glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+
 	glRotatef(spin, 0.0, 0.0, 1.0);
 	glColor3ub(99, 58, 0);
 	glRectf(-70.0, -40.0, 70.0, 40.0);
@@ -169,56 +175,133 @@ void display(void) {
 	drawWall_1(40.0, 2.0, 50.0, 50.0, 30.0, 0.0, 53, 53, 53);
 	// 붙박이장쪽 천장
 	drawWall_1(12.0, 62.0, 2.0, -64.0, 10.0, -50.0, 53, 53, 53);
+	glPushMatrix();
+	// 세로 벽
+	glRotatef(90.0, 0.0, 0.0, 1.0);
+	drawWall_1(62.0, 2.0, 50.0, 8.0, 70.0, 0.0, 53, 53, 53);	//붙박이장쪽 바깥벽
+	drawWall_1(14.5, 2.0, 50.0, -15.0, 57.0, 0.0, 168, 130, 25);	// 붙박이장 문 1
+	drawWall_1(5.0, 2.0, 50.0, -10.0, 56.5, 0.0, 250, 244, 192);		// 문에 있는 타일
+	drawWall_1(0.53, 0.53, 50.0, -7.0, 56.0, 0.0, 0, 0, 0);		// 구분 선
+	drawWall_1(14.5, 2.0, 50.0, 0.0, 57.0, 0.0, 168, 130, 25);		// 붙박이장 문 2
+	drawWall_1(0.53, 0.53, 50.0, 10.0, 56.0, 0.0, 0, 0, 0);		// 구분 선
+	drawWall_1(14.5, 2.0, 50.0, 15.0, 57.0, 0.0, 168, 130, 25);		// 붙박이장 문 3
+	drawWall_1(14.5, 2.0, 50.0, 30.0, 57.0, 0.0, 168, 130, 25);		// 붙박이장 문 4
+	drawWall_1(0.53, 0.53, 50.0, 27.0, 56.0, 0.0, 0, 0, 0);		// 구분 선
+	drawWall_1(5.0, 2.0, 50.0, 30.0, 56.5, 0.0, 250, 244, 192);			// 문에 있는 타일
+	drawWall_1(70.0, 2.0, 12.5, -5.0, -70.0, 0.0, 53, 53, 53);		//창가쪽 밑의 벽
+	drawWall_1(10.0, 2.0, 50.0, 35.0, -30.0, 0.0, 53, 53, 53);
+	glPopMatrix();
+	// 침대 머리 부분
+	glPushMatrix();
+	drawWall_1(1.0, 1.0, 35.0, 68.0, -39.0, 0.0, 153, 56, 0);
+	for (int i = 1; i <= 5; i++) drawWall_1(1.0, 1.0, 24.0, 68.0 - (3.0 * i), -39.0, -10.0, 153, 56, 0);
+	drawWall_1(1.0, 1.0, 35.0, 50.0, -39.0, 0.0, 153, 56, 0);
+	glPushMatrix();
+	glRotatef(90.0, 0, 1, 0);
+	drawWall_1(1.0, 1.0, 18.0, 34.2, -39.0, 68.0, 153, 56, 0);
+	drawWall_1(1.0, 1.0, 18.0, 10.0, -39.0, 68.0, 153, 56, 0);
+	glPopMatrix();
+	// 침대 다리 부분
+	drawWall_1(1.0, 1.0, 15.0, 68.0, 15.0, 0.0, 153, 56, 0);
+	drawWall_1(1.0, 1.0, 15.0, 50.0, 15.0, 0.0, 153, 56, 0);
+	// 침대 몸통 부분
+	glPushMatrix();
+	glRotatef(90.0, 0, 0, 1);
+	drawWall_1(54.0, 2.0, 10.0, -11.5, -50.0, -5.0, 153, 56, 0);
+	drawWall_1(54.0, 2.0, 10.0, -11.5, -68.0, -5.0, 153, 56, 0);
+	glRotatef(-90.0, 0, 0, 1);
+	drawWall_1(18.0, 2.0, 10.0, 59.0, -39.0, -5.0, 153, 56, 0);
+	drawWall_1(18.0, 2.0, 10.0, 59.0, 15.0, -5.0, 153, 56, 0);
+	glPopMatrix();
+	// 매트리스
+	drawWall_1(18.0, 52.0, 10.0, 59.0, -12.0, -8.0, 103, 153, 255);
+	glPopMatrix();
+	// 창문 프레임
+	glPushMatrix();
+	drawWall_1(3.0, 2.0, 39.0, 71.0, -39.0, -12.5, 255, 255, 228);
+	drawWall_1(3.0, 2.0, 39.0, 71.0, 13.0, -12.5, 255, 255, 228);
+	drawWall_1(3.0, 2.0, 39.0, 71.0, 29.0, -12.5, 255, 255, 228);
+	drawWall_1(3.0, 70.0, 2.0, 71.0, -5.0, -12.5, 255, 255, 228);
+	drawWall_1(3.0, 70.0, 2.0, 71.0, -5.0, -50.0, 255, 255, 228);
+	// 창문은 퍼런색
+	drawWall_1(1.0, 69.0, 37.5, 71.0, -5.0, -12.5, 178, 235, 244);
+	glPopMatrix();
+	////책상
+	drawWall_1(55.0, 25.0, 5.0, 1.0, 27.0, -12.5, 186, 148, 43);
+	//책상 다리
+	glPushMatrix();
+	drawWall_1(5.0, 1.0, 12.5, -20.0, 24.0, 0.0, 0, 0, 0);
+	drawWall_1(5.0, 10.0, 1.0, -20.0, 29.0, 0.0, 0, 0, 0);
+	drawWall_1(5.0, 1.0, 12.5, -20.0, 34.0, 0.0, 0, 0, 0);
+	drawWall_1(5.0, 1.0, 12.5, 22.0, 24.0, 0.0, 0, 0, 0);
+	drawWall_1(5.0, 10.0, 1.0, 22.0, 29.0, 0.0, 0, 0, 0);
+	drawWall_1(5.0, 1.0, 12.5, 22.0, 34.0, 0.0, 0, 0, 0);
+	glPopMatrix();
+
+	//의자
+	glPushMatrix();
+	glTranslatef(12.0, 7.0, 0.0);
+	//의자 다리
+	drawWall_1(1.0, 1.0, 25.0, -4.0, 0.0, 0.0, 211, 198, 74);
+	drawWall_1(1.0, 1.0, 25.0, 4.0, 0.0, 0.0, 211, 198, 74);
+	drawWall_1(1.0, 1.0, 10.0, -4.0, 8.0, 0.0, 211, 198, 74);
+	drawWall_1(1.0, 1.0, 10.0, 4.0, 8.0, 0.0, 211, 198, 74);
+	//의자등받이
+	drawWall_1(8.0, 1.0, 8.0, 0.0, 0.0, -15.0, 211, 198, 74);
+	//의자 엉덩이
+	drawWall_1(9.0, 9.0, 2.0, 0.0, 4.0, -10.0, 211, 198, 74);
+	glPopMatrix();
+
+	//아이맥
+	glPushMatrix();
+	glTranslatef(20.0, 35.0, -16.9);
+	glRotatef(-20.0, 0.0, 0.0, 1.0);
+	//받침대
+	drawWall_1(5.0, 3.0, 1.0, 0.0, 0.0, 0.0, 184, 184, 184);
+	drawWall_1(5.0, 1.0, 7.0, 0.0, 2.0, 0.0, 184, 184, 184);
+	drawWall_1(5.0, 2.0, 1.0, 0.0, 1.0, -6.0, 184, 184, 184);
+	//모니터
+	drawWall_1(15.0, 2.0, 13.0, 0.0, 0.0, -6.0, 0, 0, 0);
+	//화면
+	drawWall_1(13.0, 0.2, 11.0, 0.0, -0.95, -6.8, 245, 245, 245);
+	glPopMatrix();
+
+	// 키보드
+	glPushMatrix();
+	glTranslatef(13.0, 25.0, -17.0);
+	//키보드 판
+	drawWall_1(10.0, 6.5, 1.0, 0.0, 0.0, 0.0, 25, 25, 25);
+	//자판키
+	drawWall_1(6.0, 3.5, 0.5, 1.5, 0.0, -0.6, 245, 245, 245);
+	//숫자키
+	drawWall_1(2.0, 3.5, 0.5, -3.3, 0.0, -0.6, 245, 245, 245);
+	glPopMatrix();
+
+	//책 들
+	glPushMatrix();
+	glTranslatef(0.0, 35.0, -17.0);
+	drawWall_1(1.0, 7.0, 5.5, 2.0, 0.0, 0.0, 0, 0, 0);
+	drawWall_1(1.0, 7.0, 5.5, 1.0, 0.0, 0.0, 255, 255, 255);
+	drawWall_1(1.0, 7.0, 7.5, 0.0, 0.0, 0.0, 222, 79, 79);
+	drawWall_1(1.0, 7.0, 7.5, -1.0, 0.0, 0.0, 54, 138, 255);
+	drawWall_1(1.0, 7.0, 8.5, -2.0, 0.0, 0.0, 234, 234, 234);
+	drawWall_1(1.0, 7.0, 9.0, -3.0, 0.0, 0.0, 181, 178, 255);
+	glPopMatrix();
+
+		//휴지통
 		glPushMatrix();
-		// 세로 벽
-		glRotatef(90.0, 0.0, 0.0, 1.0);
-		drawWall_1(62.0, 2.0, 50.0, 8.0, 70.0, 0.0, 53, 53, 53);	//붙박이장쪽 바깥벽
-		drawWall_1(14.5, 2.0, 50.0, -15.0, 57.0, 0.0, 168, 130, 25);	// 붙박이장 문 1
-		drawWall_1(5.0, 2.0, 50.0, -10.0, 56.5, 0.0, 250, 244, 192);		// 문에 있는 타일
-		drawWall_1(0.53, 0.53, 50.0, -7.0, 56.0, 0.0, 0, 0, 0);		// 구분 선
-		drawWall_1(14.5, 2.0, 50.0, 0.0, 57.0, 0.0, 168, 130, 25);		// 붙박이장 문 2
-		drawWall_1(0.53, 0.53, 50.0, 10.0, 56.0, 0.0, 0, 0, 0);		// 구분 선
-		drawWall_1(14.5, 2.0, 50.0, 15.0, 57.0, 0.0, 168, 130, 25);		// 붙박이장 문 3
-		drawWall_1(14.5, 2.0, 50.0, 30.0, 57.0, 0.0, 168, 130, 25);		// 붙박이장 문 4
-		drawWall_1(0.53, 0.53, 50.0, 27.0, 56.0, 0.0, 0, 0, 0);		// 구분 선
-		drawWall_1(5.0, 2.0, 50.0, 30.0, 56.5, 0.0, 250, 244, 192);			// 문에 있는 타일
-		drawWall_1(70.0, 2.0, 12.5, -5.0, -70.0, 0.0, 53, 53, 53);		//창가쪽 밑의 벽
-		drawWall_1(10.0, 2.0, 50.0, 35.0, -30.0, 0.0, 53, 53, 53);
-		glPopMatrix();
-		// 침대 머리 부분
-		glPushMatrix();
-		drawWall_1(1.0, 1.0, 35.0, 68.0, -39.0, 0.0, 153, 56, 0);
-		for (int i = 1; i <= 5; i++) drawWall_1(1.0, 1.0, 24.0, 68.0 - (3.0 * i), -39.0, -10.0, 153, 56, 0);
-		drawWall_1(1.0, 1.0, 35.0, 50.0, -39.0, 0.0, 153, 56, 0);
+		glTranslatef(-30.0, 30.0, 0.0);
+			//몸통부분
 			glPushMatrix();
-			glRotatef(90.0, 0, 1, 0);
-			drawWall_1(1.0, 1.0, 18.0, 34.2, -39.0, 68.0, 153, 56, 0);
-			drawWall_1(1.0, 1.0, 18.0, 10.0, -39.0, 68.0, 153, 56, 0);
+			glColor3ub(255, 255, 255);
+			glTranslatef(0.0, 0.0, -10.0);
+			glutSolidCylinder(3.0, 10.0, 15, 15);
+			glColor3ub(25, 25, 25);
+			glTranslatef(0.0, 0.0, 2.5);
+			glutSolidCylinder(3.2, 0.2, 15, 15);
 			glPopMatrix();
-		// 침대 다리 부분
-		drawWall_1(1.0, 1.0, 15.0, 68.0, 15.0, 0.0, 153, 56, 0);
-		drawWall_1(1.0, 1.0, 15.0, 50.0, 15.0, 0.0, 153, 56, 0);
-			// 침대 몸통 부분
-			glPushMatrix();
-			glRotatef(90.0, 0, 0, 1);
-			drawWall_1(54.0, 2.0, 10.0, -11.5, -50.0, -5.0, 153, 56, 0);
-			drawWall_1(54.0, 2.0, 10.0, -11.5, -68.0, -5.0, 153, 56, 0);
-			glRotatef(-90.0, 0, 0, 1);
-			drawWall_1(18.0, 2.0, 10.0, 59.0, -39.0, -5.0, 153, 56, 0);
-			drawWall_1(18.0, 2.0, 10.0, 59.0, 15.0, -5.0, 153, 56, 0);
-			glPopMatrix();
-		// 매트리스
-		drawWall_1(18.0, 52.0, 10.0, 59.0, -12.0, -8.0, 103, 153, 255);
-		glPopMatrix();
-		// 창문 프레임
-		glPushMatrix();
-		drawWall_1(3.0, 2.0, 39.0, 71.0, -39.0, -12.5, 255, 255, 228);
-		drawWall_1(3.0, 2.0, 39.0, 71.0, 13.0, -12.5, 255, 255, 228);
-		drawWall_1(3.0, 2.0, 39.0, 71.0, 29.0, -12.5, 255, 255, 228);
-		drawWall_1(3.0, 70.0, 2.0, 71.0, -5.0, -12.5, 255, 255, 228);
-		drawWall_1(3.0, 70.0, 2.0, 71.0, -5.0, -50.0, 255, 255, 228);
-		// 창문은 퍼런색
-		drawWall_1(1.0, 69.0, 37.5, 71.0, -5.0, -12.5, 178, 235, 244);
+		// 페달 부분
+		drawWall_1(1.5, 1.0, 1.0, 0.0, -3.3, 0.0, 25, 25, 25);
 		glPopMatrix();
 	glPopMatrix();
 
@@ -237,10 +320,33 @@ void spinDisplay(void) {
 }
 
 void init() {
+	GLfloat ambient[] = { 0.0, 1.0, 0.0, 1.0 };
+	GLfloat diffuse[] = { 0.25, 0.25, 0.25, 1.0 };
+	GLfloat specular[] = { 1.0, 1.0, 1.0, 1.0 };
+
+	GLfloat two_ambient[] = { 1.0, 0.0, 1.0, 1.0 };
+	GLfloat two_diffuse[] = { 0.25, 0.25, 0.25, 1.0 };
+	GLfloat two_specular[] = { 1.0, 1.0, 1.0, 1.0 };
+
+	GLfloat light_Pos[] = { 0.0, 0.0, -50.0, 1.0 };
+
 	glClearColor(0.83, 0.83, 0.83, 0.0);
+	glEnable(GL_DEPTH_TEST);
 	glShadeModel(GL_SMOOTH);
 
-	glEnable(GL_DEPTH_TEST);
+	glLightfv(GL_LIGHT0, GL_AMBIENT, ambient);
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuse);
+	glLightfv(GL_LIGHT0, GL_SPECULAR, specular);
+	glLightfv(GL_LIGHT0, GL_POSITION, light_Pos);
+
+	glLightfv(GL_LIGHT1, GL_AMBIENT, two_ambient);
+	glLightfv(GL_LIGHT1, GL_DIFFUSE, two_diffuse);
+	glLightfv(GL_LIGHT1, GL_SPECULAR, two_specular);
+	glLightfv(GL_LIGHT1, GL_POSITION, light_Pos);
+
+	//glEnable(GL_LIGHTING);
+	//glEnable(GL_LIGHT0);
+	//glEnable(GL_LIGHT1);
 	return;
 }
 
@@ -261,6 +367,40 @@ void reshape(int w, int h) {
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 
+	return;
+}
+
+void keyboard(unsigned char key, int x, int y) {
+	switch (key) {
+	case 48:
+		printf("눌렸습니다. %c\n", key);
+		glDisable(GL_LIGHTING);
+		glDisable(GL_LIGHT0);
+		glDisable(GL_LIGHT1);
+		break;
+	case 49:
+		printf("눌렸습니다. %c\n", key);
+		glEnable(GL_LIGHTING);
+		glEnable(GL_LIGHT0);
+		glDisable(GL_LIGHT1);
+		break;
+	case 50:
+		printf("눌렸습니다. %c\n", key);
+		glEnable(GL_LIGHTING);
+		glDisable(GL_LIGHT0);
+		glEnable(GL_LIGHT1);
+		break;
+	case 51:
+		printf("눌렸습니다. %c\n", key);
+		glEnable(GL_LIGHTING);
+		glEnable(GL_LIGHT0);
+		glEnable(GL_LIGHT1);
+		break;
+	default:
+		break;
+	}
+
+	glutPostRedisplay();
 	return;
 }
 

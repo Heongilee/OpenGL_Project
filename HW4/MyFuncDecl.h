@@ -14,4 +14,5 @@ void display(void);
 void spinDisplay(void);
 void init();
 void reshape(int w, int h);
+void keyboard(unsigned char key, int x, int y);
 void mouse(int button, int state, int x, int y);
