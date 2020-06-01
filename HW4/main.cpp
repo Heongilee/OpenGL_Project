@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
 	glutInitWindowSize(1280, 720);
 	glutInitWindowPosition(100, 25);
-	glutCreateWindow("15012970 / ¿Ã«Â±‚ / HW4");
+	glutCreateWindow("15012970 / ¿Ã«Â±‚ / HW5");
 	init();
 	glutDisplayFunc(display);
 	glutReshapeFunc(reshape);
